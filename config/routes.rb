@@ -5,12 +5,14 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :users
-  
+
   root  to: 'home#index'
 
   resources :products
-  resources :reviews, except: [:index, :show] 
-  
+  resources :reviews, except: [:index, :show]
+
+  resources :charges
+
 
   resource :cart, only: [:show] do
     post 'add/:product_id', to: 'carts#add', as: :add
