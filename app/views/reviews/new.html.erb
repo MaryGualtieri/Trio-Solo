@@ -1,5 +1,10 @@
-<%= form_for @review do |f| %>
+<!-- Need to make this view send the product_id -->
+
+<h1>Review for <%=@product.description%></h1>
+
+<%= form_for(@review) do |f| %>
   <%= f.label :Review %>:
-  <%= f.text_area :body %><br />
+  <%= f.text_area :body %><br/>
+  <%= f.hidden_field :product_id, :value => @product.id %>
   <%= f.submit "Save Review" %>
 <% end %>

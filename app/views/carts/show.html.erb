@@ -17,12 +17,10 @@
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Write Review', new_review_path(product) %></td>
         <td><%= link_to 'Destroy', remove_cart_path(product.id), method: :post, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
     <% end %>
   </tbody>
-
 </table>
-
-<br>

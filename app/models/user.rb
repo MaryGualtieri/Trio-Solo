@@ -4,9 +4,4 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-
-  # def buy product
-  # 		self.cartItems.create description: product.description, price: product.price
-  # end
-
 end

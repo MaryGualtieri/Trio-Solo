@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root  to: 'home#index'
 
   resources :products
-  resources :reviews
+  resources :reviews, except: [:index, :show] 
   
 
   resource :cart, only: [:show] do
