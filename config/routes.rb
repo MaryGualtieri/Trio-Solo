@@ -1,13 +1,23 @@
 Rails.application.routes.draw do
 
+  get 'carts/show'
+
   devise_for :users
   resources :users
   
   root  to: 'home#index'
 
-  resources :products
+  resources :products do
+    resources :reviews
+  end
+
+  resource :cart, only: [:show] do
+    post 'add/:product_id', to: 'carts#add', as: :add
+    post 'remove/:product_id', to: 'carts#remove', as: :remove
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  # See how  all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

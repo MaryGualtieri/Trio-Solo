@@ -1,12 +1,5 @@
 class UsersController < ApplicationController
 	before_filter :ensure_admin!
-
-	def index
-	end
-
-	def show
-	end
-
 	private
 
 	def ensure_admin!
@@ -19,5 +12,7 @@ class UsersController < ApplicationController
 			return false
 		end
 	end
+	
+
 
 end
