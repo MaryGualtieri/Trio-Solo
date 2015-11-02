@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_cart_product_path(@cart_product) %> |
-<%= link_to 'Back', cart_products_path %>
+<h3>Product information</h3>
+<p><%= @cart_product.description %></p>
+<p><%= @cart_product.price %></p>

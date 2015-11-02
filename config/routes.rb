@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   
   root  to: 'home#index'
 
-  resources :products do
-    resources :reviews
-  end
+  resources :products
+  resources :reviews
+  
 
   resource :cart, only: [:show] do
     post 'add/:product_id', to: 'carts#add', as: :add

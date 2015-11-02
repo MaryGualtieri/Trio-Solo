@@ -1,7 +1,7 @@
-<h1>Carts#show</h1>
-<p>Find me in app/views/carts/show.html.erb</p>
-
 <table>
+  <%if @products.empty? %>
+      <h1>Your cart is empty</h1>
+    <%else%>
   <thead>
     <tr>
       <th>Description</th>
@@ -11,17 +11,18 @@
   </thead>
 
   <tbody>
-    <% CartProduct.all.each do |product| %>
-      <tr>
-      	<% if product.cart_id == current_user.id %>	
+    
+    <% @products.each do |product| %>
+        <tr>
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Destroy', remove_cart_path(product.id), method: :post, data: { confirm: 'Are you sure?' } %></td>
-        <%end%>
       </tr>
     <% end %>
+    <% end %>
   </tbody>
+
 </table>
 
 <br>

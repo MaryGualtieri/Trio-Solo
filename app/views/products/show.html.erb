@@ -20,8 +20,8 @@
 <%end%>
 <%= link_to 'Back', products_path %>
 <% if current_user %>
-<%= link_to 'Add to cart', add_cart_path(product_id), method: :post %>
-<%= link_to 'Write review', review_create_path(product_id) %>
+<%= link_to 'Add to cart', add_cart_path(@product), method: :post %>
+<%= link_to 'Write review', new_review_path(@product) %>
 <% end %>
 
 
