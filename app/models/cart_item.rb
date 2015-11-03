@@ -1,3 +1,4 @@
-class CartItem < ActiveRecord::Base
-	belongs_to :user
+
+class CartItem < Product
+	belongs_to :cart
 end

@@ -1,0 +1,26 @@
+<table>
+  <%if @products.empty? %>
+      <h1>Your cart is empty</h1>
+    <%else%>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+    <% @products.each do |product| %>
+        <tr>
+        <td><%= product.description %></td>
+        <td><%= product.price %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Write Review', new_review_path(product) %></td>
+        <td><%= link_to 'Destroy', remove_cart_path(product.id), method: :post, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    <% end %>
+  </tbody>
+</table>

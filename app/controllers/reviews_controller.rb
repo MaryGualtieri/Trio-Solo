@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+<<<<<<< HEAD
   before_action :set_review, only: [:show, :edit, :update, :destroy]
 
   # GET /reviews
@@ -71,4 +72,29 @@ class ReviewsController < ApplicationController
     def review_params
       params.require(:review).permit(:comment, :product_id)
     end
+=======
+
+	def new
+		@review = Review.new
+		@review.product_id = params[:format]
+		@product = find_product @review.product_id
+	end
+
+	def create 
+		@review = Review.new(reviews_params)
+		@product = find_product params[:review][:product_id]
+		redirect_to @product
+	end
+
+	private
+
+	def reviews_params
+    params.require(:review).permit(:body, :product_id)
+  end
+
+  def find_product product_id
+  	Product.find product_id
+  end
+
+>>>>>>> 6bfb2782a208c692a90e7382def12ed896dc254c
 end

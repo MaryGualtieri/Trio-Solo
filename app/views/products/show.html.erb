@@ -1,3 +1,4 @@
+
 <div class ="background-product">
 	<nav class="flex-nav">
 	  <ul>
@@ -10,7 +11,7 @@
 
 
 <p id="notice"><%= notice %></p>
-
+<% product_id = params[:id] %>
 <div class="productImage">
 	<%= image_tag @product.image %>
 </div>
@@ -25,10 +26,14 @@
   <%= @product.price %>
 </p>
 
+<% if current_user.admin%>
 <%= link_to 'Edit', edit_product_path(@product) %> |
+<%end%>
 <%= link_to 'Back', products_path %>
-<%= link_to 'Review', reviews_path %>
-<%= link_to 'Buy', current_user.buy(@product) %>
+<% if current_user %>
+<%= link_to 'Add to cart', add_cart_path(@product), method: :post %>
+<%= link_to 'Write review', new_review_path(@product) %>
+<% end %>
 
 </div>
 	</div>
