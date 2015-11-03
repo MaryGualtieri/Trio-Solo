@@ -4,7 +4,7 @@
 	  <ul>
 	    <li><a href="/">Home</a></li>
 	    <li><a href="">About</a></li>
-	    <li><a href="#icons">Shopping Cart</a></li>
+	    <li><a href="/charges/new">Checkout</a></li>
 	    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
 	  </ul>
 	</nav>
@@ -16,16 +16,17 @@
 	<%= image_tag @product.image %>
 
 
-<p>
+<p class="something">
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
 
-<p>
+<p class="something">
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
 
+<div class="something">
 <% if current_user.admin%>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%end%>
@@ -34,8 +35,9 @@
 <%= link_to 'Add to cart', add_cart_path(@product), method: :post %>
 <%= link_to 'Write review', new_review_path(@product) %>
 <% end %>
+</div>
 
-<p>
+<p class="something">
 	<% @reviews.each do |review| %>
 		<%= review.body %>
 	<% end %>

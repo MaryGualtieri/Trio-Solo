@@ -24,8 +24,7 @@ h1 {
 
 /*!<-----Nav Bar---->*/
 .flex-nav a {
-
-      text-decoration: none;
+       text-decoration: none;
        padding: 20px ;
        display: inline;
        width: 100%;

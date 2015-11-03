@@ -2,7 +2,7 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-.productImage {   
+.productImage {
     text-align: center;
     background-color: gray;
     margin-left: 30%;
@@ -60,3 +60,15 @@
 
 .flex-nav li {
   flex: 1;
+}
+
+
+.something {
+  text-shadow: none;
+  color:Black;
+  }
+
+.something a {
+    text-shadow: none;
+    color:Black;
+    }
