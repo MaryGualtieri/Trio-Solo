@@ -1,3 +1,30 @@
+<div class="header">
+  <h1>Welcome Home</h1>
+
+  <!-- Add the form.database to form.php -->
+  <div class="Product-Search">
+
+        <form action="form.php" method="post">
+        Product Search: <input type="text" name="term" />
+        <input type="submit" name="submit" value="Submit" />
+        </form>
+  </div>
+
+<!--NAV Bar-->
+
+<nav class="flex-nav">
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Product Search</a></li>
+    <li><a href="#rps">Your Account</a></li>
+    <li><a href="#icons">Shopping Cart</a></li>
+    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+  </ul>
+</nav>
+
+</div>
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Products</h1>
@@ -25,5 +52,6 @@
 </table>
 
 <br>
+
 
 <%= link_to 'New Product', new_product_path %>

@@ -1,5 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class ="background-product">
+	<nav class="flex-nav">
+	  <ul>
+	    <li><a href="/">Home</a></li>
+	    <li><a href="">About</a></li>
+	    <li><a href="#icons">Shopping Cart</a></li>
+	    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+	  </ul>
+	</nav>
 
+
+<p id="notice"><%= notice %></p>
 
 <div class="productImage">
 	<%= image_tag @product.image %>
@@ -19,3 +29,6 @@
 <%= link_to 'Back', products_path %>
 <%= link_to 'Review', reviews_path %>
 <%= link_to 'Buy', current_user.buy(@product) %>
+
+</div>
+	</div>

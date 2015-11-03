@@ -1,0 +1,32 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*Login Page*/
+
+.background {
+  background-image: url('http://gtm.constantnewsincc.netdna-cdn.com/wp-content/uploads/2015/01/3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  padding-bottom: 27%;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  padding: 20%;
+
+}
+
+a {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+a:visited {
+  color: white;
+}

@@ -1,3 +1,108 @@
-<h1>Welcome Home</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
 
-<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<div class="header">
+  <img src="http://cliparts.co/cliparts/riL/noq/riLnoqrrT.png" class="logo"/><h1>Wynback</h1></a>
+
+  <!-- Add the form.database to form.php -->
+  <div class="Product-Search">
+
+        <form action="form.php" method="post">
+        Product Search: <input type="text" name="term" />
+        <input type="submit" name="submit" value="Submit" />
+        </form>
+  </div>
+
+<!--NAV Bar-->
+
+<nav class="flex-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="#icons">Shopping Cart</a></li>
+    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+  </ul>
+</nav>
+
+</div>
+
+
+<body>
+
+<!--Product Display-->
+  <div class="item-container">
+    <div class="item">
+      <a href="/products/3">
+        <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+        <!-- <button class="button" id="save">More Information</button> -->
+        <form action="/products/3">
+           <input class="button" value="More Information" type="submit" />
+        </form>
+        <form action="/products/3">
+           <input class="button" value="Add to Cart" type="submit" />
+        </form>
+</div>
+
+<div class="item">
+  <a href="/products/3">
+    <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/3">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>  <div class="item">
+    <a href="/products/3">
+      <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+      <!-- <button class="button" id="save">More Information</button> -->
+      <form action="/products/3">
+         <input class="button" value="More Information" type="submit" />
+      </form>
+      <form action="/products/3">
+         <input class="button" value="Add to Cart" type="submit" />
+      </form>
+</div>
+
+<div class="item">
+  <a href="/products/3">
+    <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/3">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/3">
+    <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/3">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+
+    </div>
+
+    <div class="footer">
+        WE CAN ADD SOME STUFF HERE!
+    </div>
+
+
+
+
+
+</body>
+</html>
