@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find params[:id]
+    @reviews = find_reviews params[:id].to_i
   end
 
   # GET /products/new
@@ -73,4 +74,13 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:description, :price, :image, :name)
     end
+
+    def find_reviews id
+      reviews = Array.new
+      Review.all.each do |r|
+        reviews << r if r.product_id = id
+      end
+      reviews
+    end
+
 end

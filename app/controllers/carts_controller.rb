@@ -1,11 +1,10 @@
 class CartsController < ApplicationController
-  
+
   def show
     @products = find_all
   end
 
   def add
-  	#render plain: params
   	p = Product.find params[:product_id]
   	c = CartProduct.create
     c.cart_id = current_user.id

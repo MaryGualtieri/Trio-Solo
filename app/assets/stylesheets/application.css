@@ -53,3 +53,10 @@ html {
    margin-top: 6%;
   margin-bottom: 7%;
  }
+
+ img.logo {
+     width: 65px;
+     height: 29%;
+     box-shadow: none;
+     margin-left: 2px;
+ }

@@ -2,11 +2,16 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-.productImage {
-  text-align: center;
-
-}
-
+.productImage {   
+    text-align: center;
+    background-color: gray;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 9px;
+    opacity: 0.9;
+  }
 
 .background-product {
   background-image: url('http://payload.cargocollective.com/1/3/126253/1656660/Sahel_2048.jpg');
@@ -22,7 +27,7 @@
   padding: 20%;
   margin-top: -20%;
   margin-bottom: 5%;
-    text-shadow: 2px 2px black;
+  text-shadow: 2px 2px black;
 }
 
 

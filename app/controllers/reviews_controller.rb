@@ -8,6 +8,8 @@ class ReviewsController < ApplicationController
 
 	def create
 		@review = Review.new(reviews_params)
+		@review.product_id = params[:review][:product_id]
+		@review.save
 		@product = find_product params[:review][:product_id]
 		redirect_to @product
 	end

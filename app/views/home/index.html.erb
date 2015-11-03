@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,7 +22,7 @@
 <nav class="flex-nav">
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="">About</a></li>
+    <li><a href="/about/Us">About</a></li>
     <li><a href="#icons">Shopping Cart</a></li>
     <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
   </ul>
@@ -37,30 +36,32 @@
 <!--Product Display-->
   <div class="item-container">
     <div class="item">
-      <a href="/products/3">
-        <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+      <a href="/products/1">
+        <img class="product-img" src="http://media03.toms.com/static/www/images/product/product_image_1450x1015_Side/10008457_Krochet-Kids_Snowflake-Saturdays-Sweater_H-1450x1015-Large%20Image%20Side.jpg" /></a><br>
         <!-- <button class="button" id="save">More Information</button> -->
-        <form action="/products/3">
+        <form action="/products/1">
            <input class="button" value="More Information" type="submit" />
         </form>
-        <form action="/products/3">
+        <form action="/cart/add/:1">
            <input class="button" value="Add to Cart" type="submit" />
         </form>
 </div>
 
 <div class="item">
-  <a href="/products/3">
-    <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+  <a href="/products/2">
+    <img class="product-img" src="http://media03.toms.com/static/www/images/product/product_image_1450x1015_Side/10008455_Krochet-Kids_Pale-Pink-Saturdays-Sweater_H-1450x1015-Large%20Image%20Side.jpg" /></a><br>
     <!-- <button class="button" id="save">More Information</button> -->
-    <form action="/products/3">
+    <form action="/products/2">
        <input class="button" value="More Information" type="submit" />
     </form>
     <form action="/products/3">
        <input class="button" value="Add to Cart" type="submit" />
     </form>
-</div>  <div class="item">
+</div>
+
+ <div class="item">
     <a href="/products/3">
-      <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+      <img class="product-img" src="http://media03.toms.com/static/www/images/product/product_image_1450x1015_Side/Krochet-Kids_Grey-Mixed-Knit-Infinity-Scarf_10008496_H-1450x1015-Large%20Image%20Side.jpg" /></a><br>
       <!-- <button class="button" id="save">More Information</button> -->
       <form action="/products/3">
          <input class="button" value="More Information" type="submit" />
@@ -71,10 +72,10 @@
 </div>
 
 <div class="item">
-  <a href="/products/3">
-    <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+  <a href="/products/4">
+    <img class="product-img" src="http://media03.toms.com/static/www/images/product/product_image_1450x1015_Side/10008235-LaMer-BlackRainbowGuatamalanWrapWatch_H-1450x1015-Large%20Image%20Side.jpg" /></a><br>
     <!-- <button class="button" id="save">More Information</button> -->
-    <form action="/products/3">
+    <form action="/products/4">
        <input class="button" value="More Information" type="submit" />
     </form>
     <form action="/products/3">
@@ -83,10 +84,10 @@
 </div>
 
 <div class="item">
-  <a href="/products/3">
-    <img class="product-img" src="https://cdn-img-0.wanelo.com/p/89b/6ae/fd4/9b03436954de64ec6eee9cb/x354-q80.jpg" /></a><br>
+  <a href="/products/5">
+    <img class="product-img" src="http://www.beadforlife.org/shop/media/catalog/product/cache/1/small_image/270x/9df78eab33525d08d6e5fb8d27136e95/e/a/ea_drop_earrings_web.jpg" /></a><br>
     <!-- <button class="button" id="save">More Information</button> -->
-    <form action="/products/3">
+    <form action="/products/5">
        <input class="button" value="More Information" type="submit" />
     </form>
     <form action="/products/3">
@@ -94,11 +95,130 @@
     </form>
 </div>
 
+<div class="item">
+  <a href="/products/5">
+    <img class="product-img" src="http://www.beadforlife.org/shop/media/catalog/product/cache/1/small_image/270x/9df78eab33525d08d6e5fb8d27136e95/1/_/1_web_2.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/5">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/7">
+    <img class="product-img" src="http://www.beadforlife.org/shop/media/catalog/product/cache/1/small_image/270x/9df78eab33525d08d6e5fb8d27136e95/a/s/asalisidewayfinal.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/7">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/8">
+    <img class="product-img" src="http://krochetkids.wpengine.netdna-cdn.com/wp-content/uploads/2015/10/Devin_BlackPalePink_Fit_01-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/8">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/9">
+    <img class="product-img" src="https://www.krochetkids.org/wp-content/uploads/2015/03/Brooklyn_Indigo_Fit01-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/9">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/10">
+    <img class="product-img" src="https://www.krochetkids.org/wp-content/uploads/2015/04/W_Malibu_Wine_Fit_01-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/10">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/11">
+    <img class="product-img" src="https://www.krochetkids.org/wp-content/uploads/2014/09/Grant_Navy_WhiteStripe_Fit-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/11">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/12">
+    <img class="product-img" src="https://www.krochetkids.org/wp-content/uploads/2015/07/Edith_Grey_Fit-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/12">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/13">
+    <img class="product-img" src="https://www.krochetkids.org/wp-content/uploads/2015/07/M_Davey_Black_Fit_01-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/13">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/14">
+    <img class="product-img" src="https://www.krochetkids.org/wp-content/uploads/2015/07/W_Shoreline_Black_Fit_012-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/14">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
+
+<div class="item">
+  <a href="/products/15">
+    <img class="product-img" src="https://www.krochetkids.org/wp-content/uploads/2015/10/M_PocketHood_HeatherGreyBlack_Fit_011-300x300.jpg" /></a><br>
+    <!-- <button class="button" id="save">More Information</button> -->
+    <form action="/products/15">
+       <input class="button" value="More Information" type="submit" />
+    </form>
+    <form action="/products/3">
+       <input class="button" value="Add to Cart" type="submit" />
+    </form>
+</div>
 
     </div>
 
     <div class="footer">
-        WE CAN ADD SOME STUFF HERE!
+
     </div>
 
 

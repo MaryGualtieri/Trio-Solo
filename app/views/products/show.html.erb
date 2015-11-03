@@ -14,7 +14,7 @@
 <% product_id = params[:id] %>
 <div class="productImage">
 	<%= image_tag @product.image %>
-</div>
+
 
 <p>
   <strong>Description:</strong>
@@ -35,5 +35,12 @@
 <%= link_to 'Write review', new_review_path(@product) %>
 <% end %>
 
+<p>
+	<% @reviews.each do |review| %>
+		<%= review.body %>
+	<% end %>
+</p>
+
+</div>
 </div>
 	</div>

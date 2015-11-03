@@ -21,12 +21,12 @@
 }
 
 a {
-    color: white;
+    color: blue;
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
     font-weight: 900;
 }
 
 a:visited {
-  color: white;
+  color: red;
 }

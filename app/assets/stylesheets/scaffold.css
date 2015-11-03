@@ -17,11 +17,10 @@ pre {
 
 a { color: white;
     font-size: 1em;
-    text-shadow: 2px 2px black;
     }
 
 /*a:visited { color: #red; }*/
-a:hover { color: #fff;
+a:hover { color: red;
  }
 
 
