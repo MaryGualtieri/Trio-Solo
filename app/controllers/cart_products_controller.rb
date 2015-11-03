@@ -26,7 +26,6 @@ class CartProductsController < ApplicationController
   # POST /cart_products.json
   def create
     @cart_product = CartProduct.new(cart_product_params)
-
     respond_to do |format|
       if @cart_product.save
         format.html { redirect_to @cart_product, notice: 'Cart product was successfully created.' }
