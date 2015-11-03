@@ -1,24 +1,12 @@
 Rails.application.routes.draw do
 
-<<<<<<< HEAD
-=======
-  resources :cart_products
-  get 'carts/show'
 
->>>>>>> 6bfb2782a208c692a90e7382def12ed896dc254c
   devise_for :users
   resources :users
 
   root  to: 'home#index'
 
   resources :products
-<<<<<<< HEAD
-  resources :reviews
-  resources :cart_items
-  resources :charges
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-=======
   resources :reviews, except: [:index, :show]
 
   resources :charges
@@ -31,7 +19,6 @@ Rails.application.routes.draw do
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how  all your routes lay out with "rake routes".
->>>>>>> 6bfb2782a208c692a90e7382def12ed896dc254c
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
