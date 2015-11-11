@@ -1,7 +1,5 @@
 == README
 
-This is my attempt to recreate the TRIO project I worked on with Glenn and Patricio. 
-
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
