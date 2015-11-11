@@ -1,1 +1,1 @@
-# amazonClone
+# TrioSolo
